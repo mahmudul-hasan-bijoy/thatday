@@ -265,7 +265,7 @@ a:hover {
   align-items: center;
   -webkit-box-pack: end;
   -ms-flex-pack: end;
-  justify-content: end;
+  justify-content: flex-end;
   gap: 1rem;
   text-align: right;
 }
