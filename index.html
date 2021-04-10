@@ -1,0 +1,177 @@
+<!doctype html>
+<html class="no-js" lang="en-US">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <!-- Display webpage in edge mode/IE in highest supported document mode -->
+  <meta http-equiv="x-ua-compitable" content="ie=edge, chrome 1"> 
+  <title> Thatday </title>
+  <meta name="description" content="">
+  <!-- Optimizations for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Place favicon.ico in the root directory -->
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="#">
+  <!-- VENDOR CSS FILES -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/fontawesome/css/fontawesome.all.min.css">
+
+  <!-- MAIN CSS FILE -->
+  <link rel="stylesheet" href="assets/css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+        <!-- HTML5 shiv and Respond.js IE8 support of HTML5 elements and media queries -->
+            <!--[if lt IE 9]>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"</script>
+            <![endif]-->
+</head>
+<body>
+  <!-- Logo Start-->
+  <header class="header">
+    <div class="container">
+      <div class="header__logo">
+        <img src="assets/img/logo.png" alt="THATDAY" class="img-fluid">
+      </div>
+    </div>
+  </header>
+  <!-- Logo End-->
+
+  <!-- Checkbox Start -->
+  <section class="checkbox">
+    <div class="container">
+
+      <div class="checkbox__wrapper">
+        <input type="checkbox" class="checkbox__input checkbox__first" name="checkbox-1" id="checkbox-1">
+        <label class="checkbox__label" for="checkbox-1">This is for myself only</label>
+      </div>
+      <div class="checkbox__wrapper">
+        <input type="checkbox" class="checkbox__input checkbox__first" name="checkbox-2" id="checkbox-2">
+        <label class="checkbox__label" for="checkbox-2">OR myself and my partner</label>
+      </div>
+
+      <div class="question pt-md">
+        <a href="#" class="question__sign">?</a>
+        <h2 class="section__bold">NZ Superannuation eligibility</h2>
+      </div>
+
+      <div class="checkbox__wrapper">
+        <input type="checkbox" class="checkbox__input" id="checkbox-3" name="checkbox-3">
+        <label class="checkbox__label" for="checkbox-3">Married, civil union or de facto couple: both partners qualify</label>
+      </div>
+      <div class="checkbox__wrapper">
+        <input type="checkbox" class="checkbox__input" id="checkbox-4" name="checkbox-4">
+          <label class="checkbox__label" for="checkbox-4">Married, civil union or de facto couple: one partner qualifies and the other <span class="section__bold section__upper">is</span> included</label>
+      </div>
+      <div class="checkbox__wrapper">
+        <input type="checkbox" class="checkbox__input" id="checkbox-5" name="checkbox-5">
+        <label class="checkbox__label" for="checkbox-5">Married, civil union or de facto couple: one partner qualifies and the other <span class="section__bold section__upper">is not</span> included</label>
+      </div>
+      <div class="checkbox__wrapper">
+        <input type="checkbox" class="checkbox__input" id="checkbox-6" name="checkbox-6">
+        <label class="checkbox__label" for="checkbox-6"><span class="section__bold section__upper">neither</span> are eligible for NZ Superannuation</label>
+      </div>
+
+    </div>
+  </section>
+  <!-- Checkbox End -->
+
+  <!-- Form Start -->
+  <section class="form">
+    <div class="container">
+      
+      <form action="#">
+
+        <div class="form__main pt-md">
+          <div class="form__wrapper flex-50">
+            <label for="text-1">Your birth date:</label>
+            <input type="text" class="form__input" name="text" id="text-1">
+          </div>
+          <div class="form__wrapper flex-50">
+            <label for="text-2">Your desired retirement age:</label>
+            <input type="text" class="form__input" name="text" id="text-2">
+          </div>
+        </div>
+
+        <div class="form__main pt-md">
+          <div class="form__wrapper">
+            <label for="text-3">Your partner’s birth date:</label>
+            <input type="text" class="form__input" name="text" id="text-3">
+          </div>
+          <div class="form__wrapper">
+            <label for="text-4">Your partner’s desired retirement age:</label>
+            <input type="text" class="form__input" name="text" id="text-4">
+          </div>
+        </div>
+
+          <div class="form__wrapper pt-md">
+            <label for="text-5" class="label__qus"><a href="#" class="question__form">?</a> Annual amount desired in retirement:</label>
+            <input type="text" class="form__input" name="text" id="text-5">
+          </div>
+
+          <div class="form__main pt-md">
+            <div class="form__wrapper flex-50 form__blank"></div>
+            <div class="form__wrapper align-end">
+              <label for="text-6" class="label__qus"><a href="#" class="question__form">?</a> Annual income earned by last person to retireafter first person has retired:</label>
+              <input type="text" class="form__input" name="text" id="text-6">
+            </div>
+          </div>
+
+          <div class="form__main pt-md">
+            <div class="form__wrapper flex-50 form__blank"></div>
+            <div class="form__wrapper align-end">
+              <label for="text-7" class="label__qus"><a href="#" class="question__form">?</a> Additional annual income received in retirement:</label>
+              <input type="text" class="form__input" name="text" id="text-7">
+            </div>
+          </div>
+
+          <div class="form__wrapper pt-md">
+            <label for="text-8" class="label__qus"><a href="#" class="question__form">?</a> Current savings:</label>
+            <input type="text" class="form__input" name="text" id="text-8">
+          </div>
+
+          <div class="form__wrapper pt-md">
+            <label for="text-9" class="label__qus"><a href="#" class="question__form">?</a> Interest rate:</label>
+            <input type="text" class="form__input" name="text" id="text-9">
+          </div>
+
+          <div class="form__wrapper pt-md">
+            <a href="#" class="button">show results</a>
+          </div>
+
+      </form>
+
+
+
+
+      <form action="#">
+        
+
+
+
+
+      </form>
+
+    </div>
+  </section>
+  <!-- Form End -->
+
+
+
+
+
+  <!-- jQuery & javaScript Files -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- <script src="assets/js/jquery.min.js"></script> -->
+  <!-- <script src="assets/js/popper.min.js"></script> -->
+  <!-- <script src="assets/js/bootstrap.min.js"></script> -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/modernizr-3.8.0.min.js"></script>
+  
+</body>
+</html>

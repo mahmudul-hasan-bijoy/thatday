@@ -1,0 +1,9 @@
+.section {
+	&__bold {
+		font-weight: 800;
+		font-size: 2rem;
+	}
+	&__upper {
+		text-transform: uppercase;
+	}
+}

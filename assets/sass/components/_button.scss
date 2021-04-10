@@ -1,0 +1,19 @@
+.button {
+	display: inline-block;
+	padding: 1rem 4rem;
+	background-color: var(--yellow);
+	text-transform: uppercase;
+	//font-size: 1.8rem;
+	font-weight: 500;
+	&:hover {
+		background-color: darken(#D7E13D, 10%);
+	}
+	@include respond (phone) {
+		padding: .8rem 3rem;
+		//font-size: 1.6rem;
+	}
+	@include respond (px-485) {
+		padding: .8rem 3rem;
+		//font-size: 1.6rem;
+	}
+}
