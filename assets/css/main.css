@@ -292,7 +292,7 @@ a:hover {
 
 .form__wrapper {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: flex-end;
 }
 
