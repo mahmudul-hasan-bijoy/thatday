@@ -9,6 +9,7 @@
 	    -ms-flex-pack: end;
 	        justify-content: end;
 	gap: 1rem;
+	text-align: right;
 	&__sign {
 		cursor: pointer;
 	    background-color: var(--secondary);
