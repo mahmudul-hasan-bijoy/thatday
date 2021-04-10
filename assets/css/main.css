@@ -1,7 +1,7 @@
 /*
-0px - 600px:	Phone
-600px - 900px:	Tablet portrait
-900px - 1200px:	Tablet landscape
+0px - 600px:  Phone
+600px - 900px:  Tablet portrait
+900px - 1200px: Tablet landscape
 [1200-1800px] is where our normal style apply
 1800px + : Big Desktop
 
@@ -16,9 +16,9 @@ ORDER: Base + Typography > Layout + Grid > Page Layout > Components;
 1em = 16px;
 */
 /*
-0px - 600px:	Phone
-600px - 900px:	Tablet portrait
-900px - 1200px:	Tablet landscape
+0px - 600px:  Phone
+600px - 900px:  Tablet portrait
+900px - 1200px: Tablet landscape
 [1200-1800px] is where our normal style apply
 1800px + : Big Desktop
 
@@ -115,6 +115,11 @@ a:hover {
   color: var(--blue);
   transition: .3s all;
   text-decoration: none;
+}
+
+::-moz-selection {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 ::selection {
