@@ -54,7 +54,7 @@
 		}
 		&:checked + .checkbox__label::before {
 			background-color: var(--primary);
-			color: var(--white);
+			color: var(--white) !important;
 		}
 		& + .checkbox__label:active::before {
 			-webkit-transform: scale(0);

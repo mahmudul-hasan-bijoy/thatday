@@ -83,9 +83,6 @@ body {
   text-rendering: optimizeLegibility;
   padding: 10rem 0;
   text-align: right;
-  /*display: flex;*/
-  /*flex-direction: column;*/
-  /*justify-content: right;*/
 }
 
 @media only screen and (min-width: 112.5em) {
@@ -142,11 +139,15 @@ a:hover {
 }
 
 .flex-50 {
+  -webkit-box-flex: 50%;
+  -ms-flex: 50%;
   flex: 50%;
 }
 
 .align-end {
-  align-items: end !important;
+  -webkit-box-align: end !important;
+  -ms-flex-align: end !important;
+  align-items: flex-end !important;
 }
 
 .button {
@@ -240,7 +241,7 @@ a:hover {
 
 .checkbox__input:checked + .checkbox__label::before {
   background-color: var(--primary);
-  color: var(--white);
+  color: var(--white) !important;
 }
 
 .checkbox__input + .checkbox__label:active::before {
