@@ -16,9 +16,9 @@ ORDER: Base + Typography > Layout + Grid > Page Layout > Components;
 1em = 16px;
 */
 /*
-0px - 600px:	Phone
-600px - 900px:	Tablet portrait
-900px - 1200px:	Tablet landscape
+0px - 600px:  Phone
+600px - 900px:  Tablet portrait
+900px - 1200px: Tablet landscape
 [1200-1800px] is where our normal style apply
 1800px + : Big Desktop
 
@@ -53,6 +53,7 @@ time, mark, audio, video {
 *,
 *::after,
 *::before {
+  -webkit-box-sizing: inherit;
   box-sizing: inherit;
 }
 
@@ -74,6 +75,7 @@ body {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 2rem;
   color: var(--primary);
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -81,6 +83,9 @@ body {
   text-rendering: optimizeLegibility;
   padding: 10rem 0;
   text-align: right;
+  /*display: flex;*/
+  /*flex-direction: column;*/
+  /*justify-content: right;*/
 }
 
 @media only screen and (min-width: 112.5em) {
@@ -110,8 +115,15 @@ body {
 a,
 a:hover {
   color: var(--blue);
+  -webkit-transition: .3s all;
+  -o-transition: .3s all;
   transition: .3s all;
   text-decoration: none;
+}
+
+::-moz-selection {
+  background-color: var(--black);
+  color: var(--white);
 }
 
 ::selection {
@@ -165,9 +177,18 @@ a:hover {
 }
 
 .checkbox__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: end;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
   flex-direction: row-reverse;
   position: relative;
   padding-top: 1rem;
@@ -191,10 +212,18 @@ a:hover {
   border: 1px solid var(--primary);
   width: 2.7rem;
   height: 2.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
   color: transparent;
+  -webkit-transition: .2s;
+  -o-transition: .2s;
   transition: .2s;
   position: absolute;
   bottom: 0rem;
@@ -215,6 +244,8 @@ a:hover {
 }
 
 .checkbox__input + .checkbox__label:active::before {
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
   transform: scale(0);
 }
 
@@ -278,22 +309,40 @@ a:hover {
 }
 
 .form__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: end;
   gap: 5rem;
 }
 
 @media only screen and (max-width: 61.9375em) {
   .form__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
     gap: 3rem;
   }
 }
 
 .form__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: end;
+  -ms-flex-align: end;
   align-items: flex-end;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
   justify-content: flex-end;
+  /* @include respond (px-485) {*/
+  /* 	flex-direction: column;*/
+  /* 	justify-content: flex-end;*/
+  /* 	gap: 1rem;*/
+  /* }*/
 }
 
 .form__wrapper label {
