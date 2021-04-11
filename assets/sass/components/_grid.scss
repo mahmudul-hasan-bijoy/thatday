@@ -21,6 +21,10 @@
 			display: -webkit-box;
 			display: -ms-flexbox;
 			display: flex;
+			width: 100%;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
 		}
 		&-1 {
 			display: -webkit-box;
@@ -124,6 +128,17 @@
 	    padding: 1rem;
 	    color: var(--white);
 	    text-transform: lowercase;
+	    -webkit-transition: .5s all ease-in-out;
+	    -o-transition: .5s all ease-in-out;
+	    transition: .5s all ease-in-out;
+	    &:hover {
+	    	-webkit-transition: .5s all ease-in-out;
+	    	-o-transition: .5s all ease-in-out;
+	    	transition: .5s all ease-in-out;
+	    	-webkit-transform: scale(1.08);
+	    	    -ms-transform: scale(1.08);
+	    	        transform: scale(1.08);
+	    }
 	    &-sm {
 	    	background-color: var(--secondary);
 	    	width: 8rem;

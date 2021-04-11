@@ -112,9 +112,9 @@ body {
 a,
 a:hover {
   color: var(--blue);
-  -webkit-transition: .3s all;
-  -o-transition: .3s all;
-  transition: .3s all;
+  -webkit-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
   text-decoration: none;
 }
 
@@ -155,25 +155,25 @@ a:hover {
   padding: 1rem 4rem;
   background-color: var(--yellow);
   text-transform: uppercase;
-  /*font-size: 1.8rem;*/
   font-weight: 500;
 }
 
 .button:hover {
+  -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
+  transform: scale(0.95);
   background-color: #c1cc1f;
 }
 
 @media only screen and (max-width: 37.5em) {
   .button {
     padding: .8rem 3rem;
-    /*font-size: 1.6rem;*/
   }
 }
 
 @media only screen and (max-width: 30.3125em) {
   .button {
     padding: .8rem 3rem;
-    /*font-size: 1.6rem;*/
   }
 }
 
@@ -311,6 +311,10 @@ a:hover {
   color: var(--white);
 }
 
+.question__form:hover {
+  color: var(--white);
+}
+
 .form {
   padding: 3rem 0;
 }
@@ -399,6 +403,10 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
@@ -530,6 +538,18 @@ a:hover {
   padding: 1rem;
   color: var(--white);
   text-transform: lowercase;
+  -webkit-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+}
+
+.grid__round:hover {
+  -webkit-transition: .5s all ease-in-out;
+  -o-transition: .5s all ease-in-out;
+  transition: .5s all ease-in-out;
+  -webkit-transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  transform: scale(1.08);
 }
 
 .grid__round-sm {
