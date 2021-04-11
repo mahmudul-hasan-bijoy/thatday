@@ -1,7 +1,7 @@
 /*
-0px - 600px:  Phone
-600px - 900px:  Tablet portrait
-900px - 1200px: Tablet landscape
+0px - 600px:	Phone
+600px - 900px:	Tablet portrait
+900px - 1200px:	Tablet landscape
 [1200-1800px] is where our normal style apply
 1800px + : Big Desktop
 
@@ -407,8 +407,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -416,8 +416,8 @@ a:hover {
   .grid__item-1 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -442,8 +442,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -452,8 +452,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding-top: 2rem;
   gap: 1rem;
 }
@@ -469,8 +469,8 @@ a:hover {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -484,8 +484,8 @@ a:hover {
   .grid__wrapper-h2 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
 }
 
@@ -502,8 +502,8 @@ a:hover {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 2rem;
 }
 
@@ -548,6 +548,10 @@ a:hover {
 
 .grid__secondary {
   background-color: var(--secondary);
+}
+
+.grid__button {
+  padding-top: 5rem;
 }
 
 .section__bold {
