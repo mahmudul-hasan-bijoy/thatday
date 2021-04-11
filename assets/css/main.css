@@ -209,7 +209,7 @@ a:hover {
 }
 
 .checkbox__input + .checkbox__label::before {
-  content: "\2713";
+  content: "\2714";
   border: 1px solid var(--primary);
   width: 2.7rem;
   height: 2.7rem;
@@ -229,6 +229,12 @@ a:hover {
   position: absolute;
   bottom: 0rem;
   right: 0;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .checkbox__input + .checkbox__label::before {
+    content: "\2713";
+  }
 }
 
 @media only screen and (max-width: 37.5em) {

@@ -26,7 +26,7 @@
 			cursor: pointer;
 		}
 		& + .checkbox__label::before {
-			content: "\2713";
+			content: "\2714";
 			border: 1px solid var(--primary);
 			width: 2.7rem;
 			height: 2.7rem;
@@ -46,6 +46,9 @@
 			position: absolute;
 			bottom: 0rem;
 			right: 0;
+			@include respond (tab-port) {
+				content: "\2713";
+			}
 			@include respond (phone) {
 				width: 2rem;
 				height: 2rem;
