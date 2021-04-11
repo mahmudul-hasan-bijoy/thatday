@@ -99,13 +99,13 @@ body {
 
 @media only screen and (max-width: 56.25em) {
   body {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
 }
 
 @media only screen and (max-width: 37.5em) {
   body {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -245,6 +245,7 @@ a:hover {
 }
 
 .checkbox__input + .checkbox__label:active::before {
+  color: var(--white);
   -webkit-transform: scale(0);
   -ms-transform: scale(0);
   transform: scale(0);
@@ -312,7 +313,6 @@ a:hover {
 
 .form {
   padding: 3rem 0;
-  /*font-size: 2rem;*/
 }
 
 .form__input {
@@ -358,11 +358,6 @@ a:hover {
   -webkit-box-pack: end;
   -ms-flex-pack: end;
   justify-content: flex-end;
-  /* @include respond (px-485) {*/
-  /* 	flex-direction: column;*/
-  /* 	justify-content: flex-end;*/
-  /* 	gap: 1rem;*/
-  /* }*/
 }
 
 .form__wrapper label {
@@ -399,23 +394,88 @@ a:hover {
   }
 }
 
-.grid__item h2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
+@media only screen and (max-width: 48em) {
+  .grid__item {
+    display: flex;
+  }
+}
+
+.grid__item-1 {
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .grid__item-1 {
+    flex-direction: column;
+  }
+}
+
+.grid__item-1 h2 {
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .grid__item-1 h2 {
+    font-size: 1.8rem;
+  }
 }
 
 @media only screen and (max-width: 37.5em) {
-  .grid__item h2 {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
+  .grid__item-1 h2 {
+    font-size: 1.6rem;
+  }
+}
+
+.grid__span {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.grid__wrapper {
+  display: flex;
+  align-items: center;
+  padding-top: 2rem;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .grid__wrapper {
+    padding-top: 4rem;
+  }
+}
+
+.grid__wrapper-h2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+@media only screen and (max-width: 56.25em) {
+  .grid__wrapper-h2 {
+    font-size: 1.8rem;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .grid__wrapper-h2 {
     flex-direction: column;
   }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .grid__wrapper-h2 {
+    font-size: 1.6rem;
+    text-align: left;
+  }
+}
+
+.grid__wrapper-secondary {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .grid__round {
@@ -440,10 +500,25 @@ a:hover {
   flex-direction: column;
   padding: 1rem;
   color: var(--white);
+  text-transform: lowercase;
+}
+
+.grid__round-sm {
+  background-color: var(--secondary);
+  width: 8rem;
+  height: 8rem;
 }
 
 .grid__round strong {
   font-size: 1.6rem;
+}
+
+.grid__black {
+  color: var(--black);
+}
+
+.grid__secondary {
+  background-color: var(--secondary);
 }
 
 .section__bold {
