@@ -140,6 +140,37 @@
 		background-color: var(--secondary);
 	}
 	&__button {
+		position: relative;
 		padding-top: 5rem;
+		display: inline-block;
+		@include respond (phone) {
+			display: -webkit-inline-box;
+			display: -ms-inline-flexbox;
+			display: inline-flex;
+			width: 100%;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+		}
+		&::after {
+			position: absolute;
+			content: "";
+			top: -3rem;
+			left: 53%;
+			border-left: 1px dashed var(--yellow);
+			width: 5rem;
+			height: 8rem;
+			@include respond (mini-tab) {
+				left: 39%;
+				top: 0;
+				height: 5rem;
+			}
+			@include respond (phone) {
+				left: 41%;
+			}
+			@include respond (px-440) {
+				left: 39%;
+			}
+		}
 	}
 }

@@ -209,7 +209,7 @@ a:hover {
 }
 
 .checkbox__input + .checkbox__label::before {
-  content: "\2714";
+  content: "\2714\fe0e";
   border: 1px solid var(--primary);
   width: 2.7rem;
   height: 2.7rem;
@@ -551,7 +551,51 @@ a:hover {
 }
 
 .grid__button {
+  position: relative;
   padding-top: 5rem;
+  display: inline-block;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .grid__button {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+.grid__button::after {
+  position: absolute;
+  content: "";
+  top: -3rem;
+  left: 53%;
+  border-left: 1px dashed var(--yellow);
+  width: 5rem;
+  height: 8rem;
+}
+
+@media only screen and (max-width: 48em) {
+  .grid__button::after {
+    left: 39%;
+    top: 0;
+    height: 5rem;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .grid__button::after {
+    left: 41%;
+  }
+}
+
+@media only screen and (max-width: 27.5em) {
+  .grid__button::after {
+    left: 39%;
+  }
 }
 
 .section__bold {
